@@ -1,0 +1,63 @@
+.pdp-wrapper {
+  padding-top: 70px;
+}
+
+@media (max-width: 900px) {
+  .pdp-wrapper {
+    padding-top: 70px;
+  }
+
+  .pdp-layout {
+    gap: 1.5rem;
+    padding-block: 1rem;
+  }
+
+  /* Force gallery to be visible and reset any stuck GSAP/CSS animations on mobile */
+  .pdp-gallery, .pdp-info {
+    opacity: 1 !important;
+    transform: none !important;
+    display: flex !important;
+  }
+
+  /* Fix the image container sizing for mobile */
+  .pdp-gallery__main {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+    display: flex !important;
+    border-radius: 12px;
+  }
+
+  .pdp-gallery__main img {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .pdp-gallery__thumbs {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* Fix shifted text */
+  .pdp-gallery p {
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  /* Adjust typography for mobile */
+  .pdp-name {
+    font-size: 1.8rem;
+  }
+  
+  .pdp-tagline {
+    font-size: 0.85rem;
+  }
+  
+  .pdp-size-btn {
+    min-width: 80px;
+    padding: 0.6rem 1rem;
+  }
+}
