@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import SEOHead from '../../components/SEOHead/SEOHead';
 
 export default function Reports() {
   const containerRef = useRef(null);
@@ -7,6 +8,11 @@ export default function Reports() {
 
   return (
     <div className="inner-page-wrapper" ref={containerRef}>
+      <SEOHead
+        title="Lab Reports & Certifications – JIRASO Organics"
+        description="View third-party lab test reports and FSSAI certifications for JIRASO Organics wood-pressed oils. We are transparent about our purity testing. 100% chemical-free, no adulteration."
+        canonical="https://www.jirasoorganics.com/reports"
+      />
       <div className="ip-hero">
     <div className="ip-hero__orb ip-hero__orb--1"></div>
     <div className="ip-hero__orb ip-hero__orb--2"></div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './KnowYourOil.css';
 import { Link } from 'react-router-dom';
+import SEOHead from '../../components/SEOHead/SEOHead';
 
 export default function KnowYourOil() {
   const containerRef = useRef(null);
@@ -8,6 +9,11 @@ export default function KnowYourOil() {
 
   return (
     <div className="inner-page-wrapper" ref={containerRef}>
+      <SEOHead
+        title="Know Your Oil – Wood-Pressed vs Refined vs Cold-Pressed"
+        description="Learn the truth about cooking oils. Understand the difference between wood-pressed, cold-pressed and refined oils. Why chemical-free, traditional kachi ghani oil is better for your health."
+        canonical="https://www.jirasoorganics.com/know-your-oil"
+      />
       <div className="ip-hero">
     <div className="ip-hero__orb ip-hero__orb--1"></div>
     <div className="ip-hero__orb ip-hero__orb--2"></div>

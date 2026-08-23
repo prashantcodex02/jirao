@@ -1,6 +1,42 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LuxuryButton from '../../components/LuxuryButton';
+import SEOHead from '../../components/SEOHead/SEOHead';
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://www.jirasoorganics.com/#localbusiness',
+  name: 'JIRASO Organics Private Limited',
+  image: 'https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/hero.png?_a=BAMCr6WO0',
+  url: 'https://www.jirasoorganics.com',
+  telephone: '+91-8393976770',
+  email: 'Jirasoorganics@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Madhavpur, Rampur Road Salempur',
+    addressLocality: 'Deoria',
+    addressRegion: 'Uttar Pradesh',
+    postalCode: '274509',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 26.2,
+    longitude: 83.8,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
+  ],
+  priceRange: '₹₹',
+  description: 'JIRASO Organics — Premium wood-pressed, chemical-free cooking oils. Traditional kachi ghani mustard, sesame, coconut and groundnut oils. FSSAI certified.',
+  sameAs: ['https://www.instagram.com/jiraso_organics'],
+};
 
 export default function Contact() {
   const containerRef = useRef(null);
@@ -56,6 +92,12 @@ export default function Contact() {
 
   return (
     <div className="inner-page-wrapper" ref={containerRef}>
+      <SEOHead
+        title="Contact Us – JIRASO Organics"
+        description="Get in touch with JIRASO Organics for retail orders, wholesale enquiries, and distributor partnerships. Call +91 83939 76770 or email Jirasoorganics@gmail.com. Based in Deoria, UP."
+        canonical="https://www.jirasoorganics.com/contact"
+        schemaJson={contactSchema}
+      />
       <div className="ip-hero">
     <div className="ip-hero__orb ip-hero__orb--1"></div>
     <div className="ip-hero__orb ip-hero__orb--2"></div>

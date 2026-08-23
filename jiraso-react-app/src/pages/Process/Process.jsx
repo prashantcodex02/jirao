@@ -1,5 +1,47 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import SEOHead from '../../components/SEOHead/SEOHead';
+
+const processSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How Wood-Pressed Oil is Made – The JIRASO Process',
+  description: 'JIRASO Organics uses the traditional wood-pressing (kachi ghani) method to extract pure, chemical-free cooking oil while preserving all natural nutrients.',
+  image: 'https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/process1.png?_a=BAMCr6WO0',
+  totalTime: 'PT8H',
+  step: [
+    {
+      '@type': 'HowToStep',
+      name: 'Sourcing Seeds',
+      text: 'We source the finest quality seeds directly from trusted Indian farmers — only natural, non-GMO seeds.',
+      position: 1,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Cleaning & Sun Drying',
+      text: 'Seeds are thoroughly cleaned and sun-dried to remove all moisture and impurities before pressing.',
+      position: 2,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Cold Wood Pressing',
+      text: 'Seeds are pressed using traditional wooden (ghani) presses at temperatures below 50°C, extracting pure oil without any chemicals or heat.',
+      position: 3,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Natural Settling & Filtration',
+      text: 'The raw oil is allowed to settle naturally and filtered through cloth to remove sediment — no chemical refining.',
+      position: 4,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Lab Testing & Bottling',
+      text: 'Every batch is lab-tested for purity and quality before being bottled in food-grade containers.',
+      position: 5,
+    },
+  ],
+};
 
 export default function Process() {
   const containerRef = useRef(null);
@@ -7,6 +49,12 @@ export default function Process() {
 
   return (
     <div className="inner-page-wrapper" ref={containerRef}>
+      <SEOHead
+        title="Our Wood-Pressing Process – How We Make Chemical-Free Oil"
+        description="Learn how JIRASO Organics makes 100% pure, wood-pressed cooking oils using traditional kachi ghani method. No heat, no chemicals. Seeds are cold-pressed below 50°C, lab-tested for purity."
+        canonical="https://www.jirasoorganics.com/process"
+        schemaJson={processSchema}
+      />
       <div className="ip-hero">
     <div className="ip-hero__orb ip-hero__orb--1"></div>
     <div className="ip-hero__orb ip-hero__orb--2"></div>

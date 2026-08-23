@@ -3,6 +3,7 @@ import './Cart.css';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import LuxuryButton from '../../components/LuxuryButton';
+import SEOHead from '../../components/SEOHead/SEOHead';
 
 export default function Cart() {
   const containerRef = useRef(null);
@@ -87,6 +88,11 @@ export default function Cart() {
 
   return (
     <div className="inner-page-wrapper" ref={containerRef}>
+      <SEOHead
+        title="Your Cart – JIRASO Organics"
+        description="Review your selected wood-pressed oils and place your order. Free delivery across India."
+        canonical="https://www.jirasoorganics.com/cart"
+      />
       {/* Hero Section */}
       <div className="ip-hero">
         <div className="ip-hero__orb ip-hero__orb--1"></div>

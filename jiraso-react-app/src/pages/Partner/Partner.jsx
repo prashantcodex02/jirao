@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Partner.css';
 import { Link } from 'react-router-dom';
 import LuxuryButton from '../../components/LuxuryButton';
+import SEOHead from '../../components/SEOHead/SEOHead';
 
 export default function Partner() {
   const containerRef = useRef(null);
@@ -59,6 +60,11 @@ export default function Partner() {
 
   return (
     <div className="inner-page-wrapper" ref={containerRef}>
+      <SEOHead
+        title="Partner With Us – Wholesale & Distributor Enquiries"
+        description="Become a retail or wholesale partner with JIRASO Organics. We supply premium wood-pressed, chemical-free cooking oils across India. Contact us for bulk pricing, distributor terms, and trade partnerships."
+        canonical="https://www.jirasoorganics.com/partner"
+      />
       <div className="ip-hero">
     <div className="ip-hero__orb ip-hero__orb--1"></div>
     <div className="ip-hero__orb ip-hero__orb--2"></div>

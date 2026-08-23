@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const faqData = [
   {
@@ -68,9 +69,26 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqData.map(item => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  };
+
   return (
     <section className="faqs-section" id="faqs">
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      </Helmet>
       <div className="container">
+
         <div className="faqs-grid">
           <div className="faqs-left rv">
             <p className="sec-num">FAQs</p>

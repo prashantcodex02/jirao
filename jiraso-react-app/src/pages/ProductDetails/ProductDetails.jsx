@@ -5,6 +5,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import LuxuryButton from '../../components/LuxuryButton';
 import { productsData } from '../../data/products';
+import SEOHead from '../../components/SEOHead/SEOHead';
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -117,8 +118,55 @@ export default function ProductDetails() {
     );
   }
 
+  // Build Product Schema (JSON-LD) for this specific product
+  const defaultSkuForSchema = product.skus.find(s => s.selected) || product.skus[0];
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.fullName,
+    image: [product.img],
+    description: `${product.tagline} ${product.fullName} by JIRASO Organics — 100% wood-pressed, chemical-free, traditional kachi ghani method. Lab-tested and FSSAI certified.`,
+    brand: {
+      '@type': 'Brand',
+      name: 'JIRASO Organics',
+    },
+    sku: product.id,
+    mpn: product.id,
+    category: 'Cooking Oil',
+    url: `https://www.jirasoorganics.com/products/${product.id}`,
+    offers: product.skus.map(sku => ({
+      '@type': 'Offer',
+      price: sku.price,
+      priceCurrency: 'INR',
+      itemCondition: 'https://schema.org/NewCondition',
+      availability: product.outOfStock
+        ? 'https://schema.org/OutOfStock'
+        : 'https://schema.org/InStock',
+      seller: {
+        '@type': 'Organization',
+        name: 'JIRASO Organics',
+      },
+      url: `https://www.jirasoorganics.com/products/${product.id}`,
+    })),
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '156',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  };
+
   return (
     <div className="inner-page-wrapper pdp-wrapper" ref={containerRef}>
+      <SEOHead
+        title={`${product.fullName} – Buy Online`}
+        description={`Buy ${product.fullName} online. ${product.tagline} 100% wood-pressed, chemical-free, no heat, no additives. FSSAI certified. Traditional kachi ghani oil by JIRASO Organics.`}
+        canonical={`https://www.jirasoorganics.com/products/${product.id}`}
+        ogImage={product.img}
+        ogType="product"
+        schemaJson={productSchema}
+      />
       <main className="container">
     <div className="pdp-layout">
 

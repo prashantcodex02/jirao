@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ══ HOME ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/hero.png?_a=BAMCr6WO0</image:loc>
+      <image:title>JIRASO Organics – Premium Wood-Pressed Natural Oils</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ PRODUCTS (Listing) ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/products</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ══ PRODUCT DETAIL: Mustard Oil ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/products/mustard</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/mustard.png?_a=BAMCr6WO0</image:loc>
+      <image:title>Wood Pressed Black Mustard Oil – JIRASO Organics</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ PRODUCT DETAIL: Sesame Oil ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/products/sesame</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/sesame.png?_a=BAMCr6WO0</image:loc>
+      <image:title>Wood Pressed Sesame Oil – JIRASO Organics</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ PRODUCT DETAIL: Coconut Oil ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/products/coconut</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/coconut.png?_a=BAMCr6WO0</image:loc>
+      <image:title>Wood Pressed Coconut Oil – JIRASO Organics</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ PRODUCT DETAIL: Groundnut Oil ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/products/groundnut</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/groundnut.png?_a=BAMCr6WO0</image:loc>
+      <image:title>Wood Pressed Groundnut Oil – JIRASO Organics</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ KNOW YOUR OIL ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/know-your-oil</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ══ OUR PROCESS ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/process</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ══ CONTACT ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/contact</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ══ PARTNER ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/partner</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ══ REPORTS ══ -->
+  <url>
+    <loc>https://www.jirasoorganics.com/reports</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

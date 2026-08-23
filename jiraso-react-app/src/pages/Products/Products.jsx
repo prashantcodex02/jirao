@@ -2,8 +2,32 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Products.css';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
-
+import SEOHead from '../../components/SEOHead/SEOHead';
 import { productsData } from '../../data/products';
+
+const productsPageSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.jirasoorganics.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Shop Oils', item: 'https://www.jirasoorganics.com/products' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'JIRASO Organics – Wood-Pressed Oils',
+    description: 'Buy 100% pure wood-pressed, chemical-free cooking oils online in India.',
+    url: 'https://www.jirasoorganics.com/products',
+    itemListElement: productsData.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://www.jirasoorganics.com${p.link}`,
+      name: p.fullName,
+    })),
+  },
+];
 
 export default function Products() {
   const containerRef = useRef(null);
@@ -38,7 +62,14 @@ export default function Products() {
 
   return (
     <div className="inner-page-wrapper" ref={containerRef}>
+      <SEOHead
+        title="Shop Wood-Pressed & Natural Cooking Oils"
+        description="Buy 100% pure wood-pressed, chemical-free cooking oils online. JIRASO Organics offers traditional kachi ghani mustard oil, sesame oil, coconut oil & groundnut oil. Free delivery across India."
+        canonical="https://www.jirasoorganics.com/products"
+        schemaJson={productsPageSchema}
+      />
       <div className="ip-hero">
+
     <div className="ip-hero__orb ip-hero__orb--1"></div>
     <div className="ip-hero__orb ip-hero__orb--2"></div>
     <div className="ip-hero__noise"></div>
