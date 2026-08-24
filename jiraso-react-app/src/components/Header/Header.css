@@ -114,14 +114,15 @@
 }
 
 .hdr.solid .hdr__cart {
-  color: var(--slate);
-  border-color: var(--border)
+  background: #0F3D2E;
+  color: #fff;
+  border-color: #0F3D2E;
 }
 
 .hdr.solid .hdr__cart:hover {
-  background: var(--ink);
+  background: #0a291f;
   color: #fff;
-  border-color: var(--ink)
+  border-color: #0a291f;
 }
 
 .hbg {

@@ -25,11 +25,7 @@ export default function LuxuryButton({ isOrdering, isSuccess, defaultText, type 
         </span>
         
         <span className="lux-content-layer lux-loading">
-          <span className="lux-dots">
-            <span className="lux-dot"></span>
-            <span className="lux-dot"></span>
-            <span className="lux-dot"></span>
-          </span>
+          <span style={{ zIndex: 3 }}>Processing...</span>
         </span>
         
         <span className="lux-content-layer lux-success">
