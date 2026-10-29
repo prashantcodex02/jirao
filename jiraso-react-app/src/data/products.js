@@ -1,11 +1,13 @@
 export const productsData = [
+  // ─── OILS ───
   {
     id: 'mustard',
+    mainCategory: 'oils',
     category: 'cooking',
     bg: '#1B4332',
-    name: 'Black Mustard oil',
+    name: 'Black Mustard Oil',
     fullName: 'Wood Pressed Black Mustard Oil',
-    tagline: 'Asli kachi ghani kali sarson ka tel — Bold, pungent & deeply traditional.',
+    tagline: 'Asli kachi ghani kali sarson ka tel — Bold, pungent &amp; deeply traditional.',
     priceHeader: '₹399',
     badge: 'Best Seller',
     img: 'https://res.cloudinary.com/dphinzmi/image/upload/f_auto,q_auto/v1/jiraso_assets/mustard.png?_a=BAMCr6WO0',
@@ -14,8 +16,28 @@ export const productsData = [
       { size: '500 ml', price: 219, dataPrice: '219', selected: false },
       { size: '1 L', price: 399, dataPrice: '399', selected: true }
     ],
-    ingredients: [
-      'Mustard Seeds', 'Natural Omega-3', 'Vitamin E', 'Antioxidants'
+    ingredients: ['Mustard Seeds', 'Natural Omega-3', 'Vitamin E', 'Antioxidants'],
+    benefits: [
+      '100% Pure Wood Pressed Mustard Oil',
+      'No Chemical Processing',
+      'Rich in Omega-3 & Omega-6',
+      'Lab Tested for Purity',
+      'FSSAI Certified',
+      'Cold Pressed Below 50°C',
+      'No Preservatives or Additives',
+      'Traditional Kachi Ghani Method'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '899.01 kcal' },
+      { label: 'Total Fat', value: '99.89g' },
+      { label: 'Saturated Fat', value: '10.43g', indent: true },
+      { label: 'Monounsaturated Fat', value: '63.32g', indent: true },
+      { label: 'Polyunsaturated Fat', value: '24.54g', indent: true },
+      { label: 'Trans Fat', value: '0.0g' },
+      { label: 'Cholesterol', value: '0.0mg' },
+      { label: 'Omega-3 Fatty Acids', value: '6.11g' },
+      { label: 'Omega-6 Fatty Acids', value: '9.32g' },
+      { label: 'Vitamin E', value: '17.98mg' }
     ],
     outOfStock: false,
     link: '/products/mustard',
@@ -24,6 +46,7 @@ export const productsData = [
   },
   {
     id: 'sesame',
+    mainCategory: 'oils',
     category: 'wellness',
     bg: '#E8E4D9',
     name: 'Sesame Oil',
@@ -37,8 +60,28 @@ export const productsData = [
       { size: '500 ml', price: 249, dataPrice: '249', selected: false },
       { size: '1 L', price: 450, dataPrice: '450', selected: true }
     ],
-    ingredients: [
-      'Sesame Seeds', 'Calcium', 'Iron', 'Sesamin'
+    ingredients: ['Sesame Seeds', 'Calcium', 'Iron', 'Sesamin'],
+    benefits: [
+      '100% Pure Wood Pressed Sesame Oil',
+      'Rich in Calcium & Iron',
+      'Contains Natural Sesamin',
+      'Ideal for South Indian Cuisine',
+      'Lab Tested for Purity',
+      'FSSAI Certified',
+      'No Preservatives or Additives',
+      'Traditional Wood Press Method'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '884 kcal' },
+      { label: 'Total Fat', value: '100g' },
+      { label: 'Saturated Fat', value: '14.2g', indent: true },
+      { label: 'Monounsaturated Fat', value: '39.7g', indent: true },
+      { label: 'Polyunsaturated Fat', value: '41.7g', indent: true },
+      { label: 'Trans Fat', value: '0.0g' },
+      { label: 'Calcium', value: '2mg' },
+      { label: 'Iron', value: '0.01mg' },
+      { label: 'Vitamin E', value: '1.4mg' },
+      { label: 'Vitamin K', value: '13.6µg' }
     ],
     outOfStock: true,
     link: '/products/sesame',
@@ -48,6 +91,7 @@ export const productsData = [
   },
   {
     id: 'coconut',
+    mainCategory: 'oils',
     category: 'tropical',
     bg: '#AEC6CF',
     name: 'Coconut Oil',
@@ -61,8 +105,27 @@ export const productsData = [
       { size: '500 ml', price: 199, dataPrice: '199', selected: false },
       { size: '1 L', price: 320, dataPrice: '320', selected: true }
     ],
-    ingredients: [
-      'Coconuts', 'Lauric Acid', 'MCTs'
+    ingredients: ['Coconuts', 'Lauric Acid', 'MCTs'],
+    benefits: [
+      '100% Pure Wood Pressed Coconut Oil',
+      'Rich in Lauric Acid & MCTs',
+      'Multi-Purpose: Cooking, Skin & Hair',
+      'Cold Extracted for Maximum Nutrition',
+      'Lab Tested for Purity',
+      'FSSAI Certified',
+      'No Preservatives or Additives',
+      'Light & Aromatic'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '862 kcal' },
+      { label: 'Total Fat', value: '100g' },
+      { label: 'Saturated Fat', value: '82.5g', indent: true },
+      { label: 'Monounsaturated Fat', value: '6.3g', indent: true },
+      { label: 'Polyunsaturated Fat', value: '1.7g', indent: true },
+      { label: 'Trans Fat', value: '0.0g' },
+      { label: 'Cholesterol', value: '0.0mg' },
+      { label: 'Lauric Acid', value: '44.6g' },
+      { label: 'Vitamin E', value: '0.09mg' }
     ],
     outOfStock: true,
     link: '/products/coconut',
@@ -72,6 +135,7 @@ export const productsData = [
   },
   {
     id: 'groundnut',
+    mainCategory: 'oils',
     category: 'cooking',
     bg: '#8B3A3A',
     name: 'Groundnut Oil',
@@ -85,12 +149,613 @@ export const productsData = [
       { size: '500 ml', price: 179, dataPrice: '179', selected: false },
       { size: '1 L', price: 280, dataPrice: '280', selected: true }
     ],
-    ingredients: [
-      'Peanuts', 'Vitamin A', 'Vitamin E'
+    ingredients: ['Peanuts', 'Vitamin A', 'Vitamin E'],
+    benefits: [
+      '100% Pure Wood Pressed Groundnut Oil',
+      'High Smoke Point for Deep Frying',
+      'Rich in Vitamin A & E',
+      'Heart-Healthy Monounsaturated Fats',
+      'Lab Tested for Purity',
+      'FSSAI Certified',
+      'No Preservatives or Additives',
+      'Versatile for All Cooking Styles'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '884 kcal' },
+      { label: 'Total Fat', value: '100g' },
+      { label: 'Saturated Fat', value: '16.9g', indent: true },
+      { label: 'Monounsaturated Fat', value: '46.2g', indent: true },
+      { label: 'Polyunsaturated Fat', value: '32g', indent: true },
+      { label: 'Trans Fat', value: '0.0g' },
+      { label: 'Cholesterol', value: '0.0mg' },
+      { label: 'Vitamin E', value: '15.69mg' }
     ],
     outOfStock: true,
     link: '/products/groundnut',
     cartDesc: 'Light, versatile oil for everyday home cooking.',
     delay: 4,
+  },
+
+  // ─── NATURAL FOODS: FLOURS ───
+  {
+    id: 'multigrain-millet-aata',
+    mainCategory: 'natural-foods',
+    category: 'flour',
+    bg: '#8B7355',
+    name: 'Multigrain Millet Aata',
+    fullName: 'Multigrain Millet Aata',
+    tagline: 'A wholesome blend of 8 ancient millets — Ragi, Jowar, Bajra, Kodo, Kutki, Kangni, Sawa & Makka for a nutritious rotis.',
+    priceHeader: '₹150',
+    badge: 'New',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.27 (1).jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 150, dataPrice: '150', selected: true }
+    ],
+    ingredients: ['Ragi', 'Jowar', 'Bajra', 'Kodo', 'Kutki', 'Kangni', 'Sawa', 'Makka'],
+    benefits: [
+      'Blend of 8 Ancient Millets',
+      'High in Dietary Fiber',
+      'Rich in Iron & Calcium',
+      'Naturally Gluten-Friendly',
+      'Low Glycemic Index',
+      'No Preservatives or Additives',
+      'Stone Ground for Maximum Nutrition',
+      'Perfect for Healthy Rotis & Parathas'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '342 kcal' },
+      { label: 'Protein', value: '10.5g' },
+      { label: 'Total Carbohydrates', value: '67g' },
+      { label: 'Dietary Fiber', value: '11.5g', indent: true },
+      { label: 'Total Fat', value: '3.5g' },
+      { label: 'Iron', value: '6.2mg' },
+      { label: 'Calcium', value: '180mg' },
+      { label: 'Phosphorus', value: '240mg' }
+    ],
+    outOfStock: false,
+    link: '/products/multigrain-millet-aata',
+    cartDesc: 'Wholesome multigrain millet flour for nutritious rotis.',
+    delay: 1,
+  },
+  {
+    id: 'ragi-flour',
+    mainCategory: 'natural-foods',
+    category: 'flour',
+    bg: '#A0522D',
+    name: 'Ragi Flour',
+    fullName: 'Ragi Flour (Finger Millet)',
+    tagline: 'A nutritious ancient grain — naturally rich in calcium and iron for stronger bones and better health.',
+    priceHeader: '₹120',
+    badge: 'Popular',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.28 (1).jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 120, dataPrice: '120', selected: true }
+    ],
+    ingredients: ['Finger Millet (Ragi)', 'Calcium', 'Iron', 'Amino Acids'],
+    benefits: [
+      '100% Natural Finger Millet Flour',
+      'Highest Calcium Among Cereals',
+      'Rich in Iron & Amino Acids',
+      'Naturally Gluten-Free',
+      'Low Glycemic Index',
+      'Great for Diabetics & Weight Management',
+      'No Preservatives or Additives',
+      'Stone Ground Traditional Method'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '328 kcal' },
+      { label: 'Protein', value: '7.3g' },
+      { label: 'Total Carbohydrates', value: '72g' },
+      { label: 'Dietary Fiber', value: '11.5g', indent: true },
+      { label: 'Total Fat', value: '1.3g' },
+      { label: 'Calcium', value: '344mg' },
+      { label: 'Iron', value: '3.9mg' },
+      { label: 'Phosphorus', value: '283mg' }
+    ],
+    outOfStock: false,
+    link: '/products/ragi-flour',
+    cartDesc: 'Nutritious finger millet flour rich in calcium and iron.',
+    delay: 2,
+  },
+  {
+    id: 'bajra-flour',
+    mainCategory: 'natural-foods',
+    category: 'flour',
+    bg: '#BDB76B',
+    name: 'Bajra Flour',
+    fullName: 'Bajra Flour (Pearl Millet)',
+    tagline: 'A nutritious ancient grain — high in protein and fiber, perfect for wholesome bajra rotis.',
+    priceHeader: '₹100',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.28 (2).jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 100, dataPrice: '100', selected: true }
+    ],
+    ingredients: ['Pearl Millet (Bajra)', 'Protein', 'Iron', 'Magnesium'],
+    benefits: [
+      '100% Natural Pearl Millet Flour',
+      'High in Protein & Fiber',
+      'Rich in Iron & Magnesium',
+      'Naturally Gluten-Free',
+      'Aids in Digestion',
+      'Good for Heart Health',
+      'No Preservatives or Additives',
+      'Traditional Stone Ground'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '361 kcal' },
+      { label: 'Protein', value: '11.6g' },
+      { label: 'Total Carbohydrates', value: '67g' },
+      { label: 'Dietary Fiber', value: '11.5g', indent: true },
+      { label: 'Total Fat', value: '5g' },
+      { label: 'Iron', value: '8mg' },
+      { label: 'Magnesium', value: '137mg' },
+      { label: 'Zinc', value: '3.1mg' }
+    ],
+    outOfStock: false,
+    link: '/products/bajra-flour',
+    cartDesc: 'Wholesome pearl millet flour for nutritious bajra rotis.',
+    delay: 3,
+  },
+  {
+    id: 'jau-flour',
+    mainCategory: 'natural-foods',
+    category: 'flour',
+    bg: '#E8D5B7',
+    name: 'Jau Flour',
+    fullName: 'Jau Flour (Barley)',
+    tagline: 'A nutritious ancient grain — fiber-rich barley flour for healthier chapatis and wholesome baking.',
+    priceHeader: '₹100',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.27.jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 100, dataPrice: '100', selected: true }
+    ],
+    ingredients: ['Barley (Jau)', 'Beta-Glucan', 'Fiber', 'B-Vitamins'],
+    benefits: [
+      '100% Natural Barley Flour',
+      'Rich in Beta-Glucan Fiber',
+      'Helps Lower Cholesterol',
+      'Good for Heart Health',
+      'Low Glycemic Index',
+      'Supports Digestive Health',
+      'No Preservatives or Additives',
+      'Stone Ground Traditional Method'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '354 kcal' },
+      { label: 'Protein', value: '12.5g' },
+      { label: 'Total Carbohydrates', value: '73.5g' },
+      { label: 'Dietary Fiber', value: '17.3g', indent: true },
+      { label: 'Total Fat', value: '2.3g' },
+      { label: 'Iron', value: '3.6mg' },
+      { label: 'Phosphorus', value: '264mg' },
+      { label: 'Niacin', value: '4.6mg' }
+    ],
+    outOfStock: false,
+    link: '/products/jau-flour',
+    cartDesc: 'Fiber-rich barley flour for healthier chapatis.',
+    headerTextColor: 'var(--color-navy)',
+    delay: 4,
+  },
+  {
+    id: 'kangani-flour',
+    mainCategory: 'natural-foods',
+    category: 'flour',
+    bg: '#DAA520',
+    name: 'Kangani Flour',
+    fullName: 'Kangani Flour (Foxtail Millet)',
+    tagline: 'A nutritious ancient grain — gluten-free foxtail millet flour packed with iron and B-vitamins.',
+    priceHeader: '₹160',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.29 (1).jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 160, dataPrice: '160', selected: true }
+    ],
+    ingredients: ['Foxtail Millet (Kangani)', 'Iron', 'B-Vitamins', 'Dietary Fiber'],
+    benefits: [
+      '100% Natural Foxtail Millet Flour',
+      'Rich in Iron & B-Vitamins',
+      'Naturally Gluten-Free',
+      'High in Dietary Fiber',
+      'Low Glycemic Index',
+      'Aids Blood Sugar Control',
+      'No Preservatives or Additives',
+      'Stone Ground for Freshness'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '351 kcal' },
+      { label: 'Protein', value: '12.3g' },
+      { label: 'Total Carbohydrates', value: '60.9g' },
+      { label: 'Dietary Fiber', value: '8g', indent: true },
+      { label: 'Total Fat', value: '4.3g' },
+      { label: 'Iron', value: '2.8mg' },
+      { label: 'Calcium', value: '31mg' },
+      { label: 'Phosphorus', value: '290mg' }
+    ],
+    outOfStock: false,
+    link: '/products/kangani-flour',
+    cartDesc: 'Gluten-free foxtail millet flour rich in iron.',
+    delay: 5,
+  },
+  {
+    id: 'kutki-flour',
+    mainCategory: 'natural-foods',
+    category: 'flour',
+    bg: '#D2B48C',
+    name: 'Kutki Flour',
+    fullName: 'Kutki Flour (Little Millet)',
+    tagline: 'A nutritious ancient grain — antioxidant-rich little millet flour for light, healthy meals.',
+    priceHeader: '₹170',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.32.jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 170, dataPrice: '170', selected: true }
+    ],
+    ingredients: ['Little Millet (Kutki)', 'Antioxidants', 'Fiber', 'Iron'],
+    benefits: [
+      '100% Natural Little Millet Flour',
+      'Rich in Antioxidants',
+      'High in Dietary Fiber',
+      'Naturally Gluten-Free',
+      'Low Glycemic Index',
+      'Supports Weight Management',
+      'No Preservatives or Additives',
+      'Traditional Stone Ground'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '341 kcal' },
+      { label: 'Protein', value: '7.7g' },
+      { label: 'Total Carbohydrates', value: '67g' },
+      { label: 'Dietary Fiber', value: '7.6g', indent: true },
+      { label: 'Total Fat', value: '4.7g' },
+      { label: 'Iron', value: '9.3mg' },
+      { label: 'Calcium', value: '17mg' },
+      { label: 'Phosphorus', value: '220mg' }
+    ],
+    outOfStock: false,
+    link: '/products/kutki-flour',
+    cartDesc: 'Antioxidant-rich little millet flour for healthy meals.',
+    delay: 6,
+  },
+  {
+    id: 'makka-aata',
+    mainCategory: 'natural-foods',
+    category: 'flour',
+    bg: '#E8C840',
+    name: 'Makka Aata',
+    fullName: 'Makka Aata (Corn Flour)',
+    tagline: 'Pure, nutritious, wholesome — golden corn flour for perfect makki ki roti and traditional recipes.',
+    priceHeader: '₹80',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.31.jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 80, dataPrice: '80', selected: true }
+    ],
+    ingredients: ['Corn (Makka)', 'Fiber', 'Vitamin A', 'Antioxidants'],
+    benefits: [
+      '100% Pure Stone Ground Corn Flour',
+      'Naturally Gluten-Free',
+      'Rich in Fiber & Vitamin A',
+      'Perfect for Makki Ki Roti',
+      'Contains Natural Antioxidants',
+      'Good Source of Energy',
+      'No Preservatives or Additives',
+      'Traditional Grinding Method'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '361 kcal' },
+      { label: 'Protein', value: '6.9g' },
+      { label: 'Total Carbohydrates', value: '76.9g' },
+      { label: 'Dietary Fiber', value: '7.3g', indent: true },
+      { label: 'Total Fat', value: '3.9g' },
+      { label: 'Iron', value: '2.7mg' },
+      { label: 'Vitamin A', value: '196µg' },
+      { label: 'Phosphorus', value: '210mg' }
+    ],
+    outOfStock: false,
+    link: '/products/makka-aata',
+    cartDesc: 'Pure corn flour for perfect makki ki roti.',
+    headerTextColor: 'var(--color-navy)',
+    delay: 7,
+  },
+
+  // ─── NATURAL FOODS: SNACKS ───
+  {
+    id: 'jowar-muruku',
+    mainCategory: 'natural-foods',
+    category: 'snack',
+    bg: '#D4A574',
+    name: 'Jowar Muruku',
+    fullName: 'Jowar Muruku — Crunchy Millet Snack',
+    tagline: 'Crunchy, guilt-free millet snack — traditional muruku made with wholesome jowar for healthy munching.',
+    priceHeader: '₹65',
+    badge: 'New',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.26.jpeg',
+    sizeLabel: '100g',
+    skus: [
+      { size: '100g', price: 65, dataPrice: '65', selected: true }
+    ],
+    ingredients: ['Jowar (Sorghum)', 'Rice Flour', 'Cumin', 'Salt'],
+    benefits: [
+      'Made from Wholesome Jowar',
+      'Crunchy & Delicious',
+      'No Artificial Flavors',
+      'High in Fiber',
+      'Naturally Gluten-Free',
+      'Baked / Minimally Fried',
+      'No Preservatives',
+      'Perfect Tea-Time Snack'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '420 kcal' },
+      { label: 'Protein', value: '8g' },
+      { label: 'Total Carbohydrates', value: '62g' },
+      { label: 'Dietary Fiber', value: '4g', indent: true },
+      { label: 'Total Fat', value: '15g' },
+      { label: 'Sodium', value: '380mg' },
+      { label: 'Iron', value: '3.2mg' }
+    ],
+    outOfStock: false,
+    link: '/products/jowar-muruku',
+    cartDesc: 'Crunchy jowar millet muruku snack.',
+    delay: 1,
+  },
+  {
+    id: 'jwar-namkeen',
+    mainCategory: 'natural-foods',
+    category: 'snack',
+    bg: '#C4956A',
+    name: 'Jwar Namkeen',
+    fullName: 'Jwar Namkeen — Crispy Millet Snack',
+    tagline: 'Crispy, healthy millet namkeen — a guilt-free alternative to regular snacks made from jowar flakes.',
+    priceHeader: '₹80',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.27 (2).jpeg',
+    sizeLabel: '200g',
+    skus: [
+      { size: '200g', price: 80, dataPrice: '80', selected: true }
+    ],
+    ingredients: ['Jowar Flakes', 'Peanuts', 'Curry Leaves', 'Spices'],
+    benefits: [
+      'Made from Premium Jowar Flakes',
+      'Crispy & Flavorful',
+      'High in Fiber & Protein',
+      'No Artificial Colors',
+      'Naturally Gluten-Free',
+      'Light & Easy to Digest',
+      'No Preservatives',
+      'Healthy Snacking Option'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '445 kcal' },
+      { label: 'Protein', value: '11g' },
+      { label: 'Total Carbohydrates', value: '58g' },
+      { label: 'Dietary Fiber', value: '5g', indent: true },
+      { label: 'Total Fat', value: '18g' },
+      { label: 'Sodium', value: '420mg' },
+      { label: 'Iron', value: '4.1mg' }
+    ],
+    outOfStock: false,
+    link: '/products/jwar-namkeen',
+    cartDesc: 'Crispy jowar millet namkeen snack.',
+    delay: 2,
+  },
+  {
+    id: 'ragi-namkeen',
+    mainCategory: 'natural-foods',
+    category: 'snack',
+    bg: '#B8860B',
+    name: 'Ragi Namkeen',
+    fullName: 'Ragi Namkeen — Crispy Millet Snack',
+    tagline: 'Crispy, healthy ragi-based namkeen — made with finger millet flakes for a calcium-rich snacking experience.',
+    priceHeader: '₹80',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.30.jpeg',
+    sizeLabel: '250g',
+    skus: [
+      { size: '250g', price: 80, dataPrice: '80', selected: true }
+    ],
+    ingredients: ['Ragi Flakes', 'Peanuts', 'Sesame Seeds', 'Spices'],
+    benefits: [
+      'Made from Nutritious Ragi Flakes',
+      'Rich in Calcium & Iron',
+      'Crispy & Tasty',
+      'No Artificial Flavors',
+      'Naturally Gluten-Free',
+      'High in Dietary Fiber',
+      'No Preservatives',
+      'Wholesome Tea-Time Snack'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '430 kcal' },
+      { label: 'Protein', value: '9.5g' },
+      { label: 'Total Carbohydrates', value: '60g' },
+      { label: 'Dietary Fiber', value: '6g', indent: true },
+      { label: 'Total Fat', value: '16g' },
+      { label: 'Calcium', value: '120mg' },
+      { label: 'Iron', value: '4.5mg' }
+    ],
+    outOfStock: false,
+    link: '/products/ragi-namkeen',
+    cartDesc: 'Crispy ragi millet namkeen snack.',
+    delay: 3,
+  },
+  {
+    id: 'ragi-vermicelli',
+    mainCategory: 'natural-foods',
+    category: 'snack',
+    bg: '#CD853F',
+    name: 'Ragi Vermicelli',
+    fullName: 'Ragi Millet Vermicelli',
+    tagline: 'Nutritious, healthy, tasty — finger millet vermicelli for a wholesome breakfast or light meal.',
+    priceHeader: '₹80',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.30 (1).jpeg',
+    sizeLabel: '200g',
+    skus: [
+      { size: '200g', price: 80, dataPrice: '80', selected: true }
+    ],
+    ingredients: ['Ragi (Finger Millet)', 'Rice Flour', 'Water'],
+    benefits: [
+      'Made from Natural Finger Millet',
+      'High in Calcium & Iron',
+      'Quick & Easy to Prepare',
+      'Naturally Gluten-Free',
+      'Perfect for Upma & Kheer',
+      'Light & Nutritious Meal',
+      'No Preservatives or Additives',
+      'Ideal for All Ages'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '335 kcal' },
+      { label: 'Protein', value: '7.2g' },
+      { label: 'Total Carbohydrates', value: '70g' },
+      { label: 'Dietary Fiber', value: '9g', indent: true },
+      { label: 'Total Fat', value: '1.5g' },
+      { label: 'Calcium', value: '280mg' },
+      { label: 'Iron', value: '3.5mg' }
+    ],
+    outOfStock: false,
+    link: '/products/ragi-vermicelli',
+    cartDesc: 'Nutritious ragi millet vermicelli for healthy meals.',
+    delay: 4,
+  },
+
+  // ─── NATURAL FOODS: GRAINS ───
+  {
+    id: 'china-rice',
+    mainCategory: 'natural-foods',
+    category: 'grain',
+    bg: '#E5DFD0',
+    name: 'China Rice',
+    fullName: 'China Rice (Proso Millet)',
+    tagline: 'A nutritious ancient grain — light, easy-to-digest proso millet rice for healthier everyday meals.',
+    priceHeader: '₹140',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.29.jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 140, dataPrice: '140', selected: true }
+    ],
+    ingredients: ['Proso Millet', 'Protein', 'B-Vitamins', 'Minerals'],
+    benefits: [
+      '100% Natural Proso Millet',
+      'Light & Easy to Digest',
+      'Rich in Protein & B-Vitamins',
+      'Naturally Gluten-Free',
+      'Low Glycemic Index',
+      'Great Rice Alternative',
+      'No Preservatives or Additives',
+      'Traditionally Processed'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '341 kcal' },
+      { label: 'Protein', value: '12.5g' },
+      { label: 'Total Carbohydrates', value: '70.4g' },
+      { label: 'Dietary Fiber', value: '5.2g', indent: true },
+      { label: 'Total Fat', value: '1.1g' },
+      { label: 'Iron', value: '0.8mg' },
+      { label: 'Calcium', value: '14mg' },
+      { label: 'Phosphorus', value: '206mg' }
+    ],
+    outOfStock: false,
+    link: '/products/china-rice',
+    cartDesc: 'Nutritious proso millet rice for healthier meals.',
+    headerTextColor: 'var(--color-navy)',
+    delay: 1,
+  },
+  {
+    id: 'sawa-rice',
+    mainCategory: 'natural-foods',
+    category: 'grain',
+    bg: '#DDD8C8',
+    name: 'Sawa Rice',
+    fullName: 'Sawa Rice (Barnyard Millet)',
+    tagline: 'A nutritious ancient grain — wholesome barnyard millet rice, perfect for fasting and daily meals.',
+    priceHeader: '₹130',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.30 (2).jpeg',
+    sizeLabel: '1 kg',
+    skus: [
+      { size: '1 kg', price: 130, dataPrice: '130', selected: true }
+    ],
+    ingredients: ['Barnyard Millet (Sawa)', 'Fiber', 'Iron', 'Phosphorus'],
+    benefits: [
+      '100% Natural Barnyard Millet',
+      'High in Dietary Fiber',
+      'Rich in Iron & Phosphorus',
+      'Naturally Gluten-Free',
+      'Ideal for Fasting Meals',
+      'Low Calorie Rice Alternative',
+      'No Preservatives or Additives',
+      'Traditionally Processed'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '307 kcal' },
+      { label: 'Protein', value: '6.2g' },
+      { label: 'Total Carbohydrates', value: '65.5g' },
+      { label: 'Dietary Fiber', value: '9.8g', indent: true },
+      { label: 'Total Fat', value: '2.2g' },
+      { label: 'Iron', value: '5mg' },
+      { label: 'Calcium', value: '20mg' },
+      { label: 'Phosphorus', value: '280mg' }
+    ],
+    outOfStock: false,
+    link: '/products/sawa-rice',
+    cartDesc: 'Wholesome barnyard millet rice for daily meals.',
+    headerTextColor: 'var(--color-navy)',
+    delay: 2,
+  },
+
+  // ─── NATURAL FOODS: SWEETENER ───
+  {
+    id: 'gud-powder',
+    mainCategory: 'natural-foods',
+    category: 'sweetener',
+    bg: '#8B6914',
+    name: 'Gud Powder',
+    fullName: 'Gud Powder (Natural Jaggery)',
+    tagline: 'Pure, healthy, nutritious — natural jaggery powder as a wholesome alternative to refined sugar.',
+    priceHeader: '₹60',
+    badge: '',
+    img: '/secondaryitems/WhatsApp Image 2026-09-30 at 12.27.32 (1).jpeg',
+    sizeLabel: '500g',
+    skus: [
+      { size: '500g', price: 60, dataPrice: '60', selected: true }
+    ],
+    ingredients: ['Sugarcane Jaggery', 'Iron', 'Minerals', 'Antioxidants'],
+    benefits: [
+      '100% Natural Jaggery Powder',
+      'Rich in Iron & Minerals',
+      'Healthy Sugar Alternative',
+      'Aids in Digestion',
+      'Contains Natural Antioxidants',
+      'Boosts Immunity',
+      'No Chemicals or Additives',
+      'Traditionally Prepared'
+    ],
+    nutrition: [
+      { label: 'Energy', value: '383 kcal' },
+      { label: 'Total Carbohydrates', value: '95g' },
+      { label: 'Sugars', value: '85g', indent: true },
+      { label: 'Protein', value: '0.4g' },
+      { label: 'Total Fat', value: '0.1g' },
+      { label: 'Iron', value: '11mg' },
+      { label: 'Calcium', value: '80mg' },
+      { label: 'Potassium', value: '1050mg' },
+      { label: 'Magnesium', value: '70mg' }
+    ],
+    outOfStock: false,
+    link: '/products/gud-powder',
+    cartDesc: 'Pure natural jaggery powder, healthier sugar alternative.',
+    delay: 1,
   }
 ];
